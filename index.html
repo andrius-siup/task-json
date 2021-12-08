@@ -19,6 +19,13 @@
 
     var dataJSON = JSON.parse(data);
 
+    var output = document.getElementById('output');
+    var taskList = document.querySelector('#taskList');
+
+    for(var key in dataJSON.tasks){
+      console.log(dataJSON.tasks[key].info + ' ' + dataJSON.tasks[key].status);
+    }
+
     console.log(dataJSON);
   </script>
 
